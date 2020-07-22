@@ -18,6 +18,13 @@
   },
   "homepage": "https://github.com/VocalZero/discord-musicbot#readme",
   "dependencies": {
-    "discord.js": "^12.2.0"
+    "@discordjs/opus": "^0.3.2",
+    "bufferutil": "^4.0.1",
+    "discord.js": "^12.2.0",
+    "erlpack": "github:discord/erlpack",
+    "libsodium-wrappers": "^0.7.6",
+    "opusscript": "0.0.7",
+    "utf-8-validate": "^5.0.2",
+    "zlib-sync": "^0.1.7"
   }
 }
