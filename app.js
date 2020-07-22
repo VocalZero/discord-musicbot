@@ -7,8 +7,10 @@ client.dispatchers = new Map();
 
 const helpCommand = require('./commands/help');
 const listCommand = require('./commands/list');
+const playCommand = require('./commands/play');
 client.commands.set('help', helpCommand);
 client.commands.set('list', listCommand);
+client.commands.set('play', playCommand);
 
 const ready = require('./events/ready');
 const message = require('./events/message');
