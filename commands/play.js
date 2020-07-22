@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
         if(!message.member.hasPermission("ADMINISTRATOR")) {
             const embed = new MessageEmbed()
 				.setColor('#eb4034')
-				.setDescription("You can't use this command because the bot don't have the right permissions. 😖")
+				.setDescription("You can't use this command because you don't have permissions. 😖")
             return message.channel.send(embed);
         }
 
@@ -37,10 +37,11 @@ exports.run = (client, message, args) => {
                 client.dispatchers.set(message.guild.id, undefined);
             });
             client.dispatchers.set(message.guild.id, dispatcher);
+            client.guildStreams.set(message.guild.id, start_stream);
             console.log(`Dispatcher started playing on ${message.guild.name} (${message.guild.id})`);
             const embed = new MessageEmbed()
 				.setColor('#26e320')
-				.setDescription(`Playing now ${start_stream.name}. 🎶`)
+                .setDescription(`Playing now ${start_stream.name}. 🎶`)
 			return message.channel.send(embed);
         });
     }

@@ -4,13 +4,16 @@ const client = new Discord.Client();
 client.config = require('./config.json');
 client.commands = new Map();
 client.dispatchers = new Map();
+client.guildStreams = new Map();
 
 const helpCommand = require('./commands/help');
 const listCommand = require('./commands/list');
 const playCommand = require('./commands/play');
+const volumeCommand = require('./commands/volume');
 client.commands.set('help', helpCommand);
 client.commands.set('list', listCommand);
 client.commands.set('play', playCommand);
+client.commands.set('volume', volumeCommand);
 
 const ready = require('./events/ready');
 const message = require('./events/message');
