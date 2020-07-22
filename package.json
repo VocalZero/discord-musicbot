@@ -1,0 +1,23 @@
+{
+  "name": "discord-musicbot",
+  "version": "1.0.0",
+  "description": "Simple Discord Musicbot written in discord.js v12.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VocalZero/discord-musicbot.git"
+  },
+  "author": "VocalZero (https://github.com/VocalZero)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VocalZero/discord-musicbot/issues"
+  },
+  "homepage": "https://github.com/VocalZero/discord-musicbot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
