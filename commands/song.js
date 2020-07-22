@@ -3,7 +3,7 @@ const icy = require('icy');
 const request = require('request');
 
 exports.run = (client, message, args) => {
-    if(!client.dispatchers.get(message.guild.id)) {
+    if (!client.dispatchers.get(message.guild.id)) {
         const embed = new MessageEmbed()
             .setColor('#eb4034')
             .setDescription("You can't use this command because the bot is not playing. 😖")
@@ -13,14 +13,14 @@ exports.run = (client, message, args) => {
 
     icy.get(stream.url, function (res) {
         res.on('metadata', function (metadata) {
-            let title =  icy.parse(metadata).StreamTitle;
+            let title = icy.parse(metadata).StreamTitle;
             let splitedTitle = String(title).split('-');
             request('https://itunes.apple.com/search?term=' + encodeURIComponent(title) + '&media=music&limit=1', {}, (err, response, body) => {
-                if(err) {
+                if (err) {
                     return;
                 }
                 const data = JSON.parse(body);
-                if(data.resultCount == 0) {
+                if (data.resultCount == 0) {
                     return;
                 }
                 const embed = new MessageEmbed()

@@ -1,4 +1,10 @@
 {
-    "token": "NzMwODczMzYyODA4NzAwOTk5.XxhTlQ.XjH0SbXqv0ZLOf7fqpYRCLHXPdQ",
-    "prefix": "-"
+    "token": "",
+    "prefix": "!",
+    "stream_list": [
+        {"name": "REYFM", "url": "https://reyfm-stream04.radiohost.de/reyfm-original_mp3-320"},
+        {"name": "HyFM", "url": "https://streams.hyfm.us/original"},
+        {"name": "ILoveRadio", "url": "http://stream01.ilovemusic.de/iloveradio1.mp3"},
+        {"name": "AtomicRadio", "url": "https://listen.atomicradio.eu/one/highquality.mp3"}
+    ]
 }
