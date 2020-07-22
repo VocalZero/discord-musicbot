@@ -22,8 +22,11 @@
     "bufferutil": "^4.0.1",
     "discord.js": "^12.2.0",
     "erlpack": "github:discord/erlpack",
+    "icy": "^2.1.0",
     "libsodium-wrappers": "^0.7.6",
+    "music-metadata": "^7.0.0",
     "opusscript": "0.0.7",
+    "request": "^2.88.2",
     "utf-8-validate": "^5.0.2",
     "zlib-sync": "^0.1.7"
   }
