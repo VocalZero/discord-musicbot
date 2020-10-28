@@ -30,8 +30,9 @@
 
 ## Start using on Ubuntu/Debain 🔌
 Requirements:
-* Git command line installed
-* Node must be installed on your system.
+* Git command line installed.
+* Make sure that you have NodeJS v12.x or later installed.
+* A C++ compiler installed such as Clang or GCC.
 * You also need your bot's token. Check this <a href="https://anidiots.guide/getting-started/getting-started-long-version">page</a> for more information.
 
 Installation:
